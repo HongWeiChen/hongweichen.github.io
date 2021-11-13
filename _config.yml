@@ -1,9 +1,9 @@
 # Site settings
-title: hongweichen Blog
-SEOTitle: hongweichen | hongweichen Blog
+title: HONGWEICHEN BLOG
+SEOTitle: HONGWEICHEN | HONGWEICHEN BLOG
 header-img: img/blog-banner-dark.jpg
 email: 5293292@qq.com
-description: "保持饥饿"
+description: "终章"
 keyword: "Swift, Objective-C, Java, iOS, Android, React-Native, Flutter, Python"
 url: "http://hongweichen.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
