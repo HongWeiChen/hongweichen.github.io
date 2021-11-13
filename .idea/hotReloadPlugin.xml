@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="HotReloadPluginConfiguration">
+    <option name="hostNameKeyword" value="newproduct-nova-c39.idczw.hb1.kwaidc.com" />
+    <option name="keywords">
+      <list>
+        <option value="15322" />
+      </list>
+    </option>
+    <option name="selectedHostName" value="newproduct-nova-c39.idczw.hb1.kwaidc.com:18806" />
+    <option name="selectedProcess">
+      <JvmProcess>
+        <option name="detailVmArgs" value="-Djava.util.logging.config.file=/data/web_server/apache/tomcat_15322/conf/logging.properties -Dnop -XX:+PrintGCApplicationStoppedTime -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+AggressiveOpts -XX:+UseStringDeduplication -Xss256k -Xms6G -Xmn6G -Xmx6G -XX:ParallelGCThreads=10 -XX:ConcGCThreads=10 -Djmagick.systemclassloader=false -Djuli-logback.configurationFile=file:/data/web_server/apache/tomcat_15322/conf/logback.xml -DLOG_PATH=/data/logs/15322/ -DHikariCP=true -DSERVER_PORT=15322 -Djava.endorsed.dirs=/data/web_server/apache/tomcat_15322/endorsed -Dcatalina.base=/data/web_server/apache/tomcat_15322 -Dcatalina.home=/data/web_server/apache/tomcat_15322 -Djava.io.tmpdir=/tmp" />
+        <option name="displayName" value="org.apache.catalina.startup.Bootstrap start" />
+        <option name="pid" value="7298" />
+      </JvmProcess>
+    </option>
+    <option name="server" value="hotreload.test.gifshow.com" />
+  </component>
+</project>

@@ -1,0 +1,65 @@
+# Site settings
+title: Yano Blog
+SEOTitle: 被称为L的男人 | Yano Blog
+header-img: img/blog-banner-dark.jpg
+email: jiayu.liu.nankai@gmail.com
+description: "渴望·冲动"
+keyword: "Yano, 被称为L的男人, Java"
+url: "http://ljyyano.github.io"          # your host, for absolute URL
+baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+github_repo: "git@github.com:LjyYano/ljyyano.github.io.git" # you code repository
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Focus!"
+sidebar-avatar: /img/head.jpeg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+# SNS settings
+RSS: true
+github_username:    LjyYano
+jianshu_username:   6835c29fc12a
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+# Google Analytics
+ga_track_id: 'UA-140497402-1'            # Format: UA-xxxxxx-xx
+ga_domain: auto
+
+# gitalk
+gitalk:
+  enable: true
+  clientID: '04a99a344b4cb31dbaeb'
+  clientSecret: '5ebaa66f6478312564a838b0ef40309f7813fa45'
+  repo: 'ljyyano.github.io'
+  owner: 'LjyYano'
+  admin: ['LjyYano']
+  distractionFreeMode: false
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+# Featured Tags
+featured-tags: true                     # 是否使用首页标签
+featured-condition-size: 0              # 相同标签数量大于这个数，才会出现在首页
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+theme: jekyll-theme-slate
