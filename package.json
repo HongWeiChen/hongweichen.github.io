@@ -1,14 +1,14 @@
 {
-    "name": "yano-blog",
-    "title": "Yano Blog",
-    "author": "Yano <15822882820@163.com>",
+    "name": "hongweichen-blog",
+    "title": "HongWeiChen Blog",
+    "author": "HongWeiChen <5293292@qq.com>",
     "version": "1.7.0",
-    "homepage": "http://ljyyano.github.io",
+    "homepage": "http://hongweichen.github.io",
     "repository": {
         "type": "git",
-        "url": "https://github.com/LjyYano/ljyyano.github.io.git"
+        "url": "https://github.com/HongWeiChen/hongweichen.github.io.git"
     },
-    "bugs": "https://github.com/LjyYano/ljyyano.github.io.git/issues",
+    "bugs": "https://github.com/HongWeiChen/hongweichen.github.io.git/issues",
     "devDependencies": {
         "grunt": "~0.4.5",
         "grunt-contrib-less": "~0.11.4",
