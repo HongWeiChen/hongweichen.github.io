@@ -16,7 +16,7 @@ sidebar-avatar: /img/head.jpeg      # use absolute URL, seeing it's used in both
 
 # SNS settings
 RSS: true
-github_username:    HongWeiChen
+github_username:    hongweichen
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
