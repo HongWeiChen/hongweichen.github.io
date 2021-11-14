@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      JavaScript中柯里化（函数化编程）
-subtitle:   JavaScript中柯里化（函数化编程）
+title:      Swift中的Copy on write
+subtitle:   Swift中的Copy on write
 date:       2021/11/11
 author:     HongWeiChen
 header-img: img/blog-banner-dark.jpg
