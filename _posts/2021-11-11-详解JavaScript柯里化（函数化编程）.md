@@ -1,4 +1,16 @@
-# Currying 柯里化
+---
+layout:     post
+title:      JavaScript中柯里化（函数化编程）
+subtitle:   JavaScript中柯里化（函数化编程）
+date:       2021/11/11
+author:     HongWeiChen
+header-img: img/blog-banner-dark.jpg
+catalog: true
+tags:
+    - JavaScript
+---
+
+# 前言
 
 前阵子在翻看Redux源码的时候，突然看到createStore中有个代码是
 ```
@@ -16,10 +28,9 @@ function createStore(preloadState, state, enhancer) {
 
 其实在Objective-C的Masonry框架中，基本运用的就是函数式编程，就是柯里化，只是换了个名称。
 
-# 柯里化
-```
-维基百科：是把接受多个参数的函数变换成接受一个单一参数（最初函数的第一个参数）的函数，并且返回接受余下的参数而且返回结果的新函数的技术
-```
+## 柯里化
+
+**维基百科：是把接受多个参数的函数变换成接受一个单一参数（最初函数的第一个参数）的函数，并且返回接受余下的参数而且返回结果的新函数的技术**
 
 示例：
 ```JavaScript

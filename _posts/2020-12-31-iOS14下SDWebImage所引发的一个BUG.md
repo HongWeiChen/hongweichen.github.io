@@ -1,4 +1,16 @@
-# iOS 14.x SDWebImage BUG
+---
+layout:     post
+title:      iOS14下SDWebImage所引发的一个BUG
+subtitle:   iOS14下SDWebImage所引发的一个BUG
+date:       2020/12/31
+author:     HongWeiChen
+header-img: img/blog-banner-dark.jpg
+catalog: true
+tags:
+    - Objective-C
+---
+
+# iOS14下SDWebImage所引发的一个BUG
 
 https://github.com/SDWebImage/SDWebImage/pull/3092
 

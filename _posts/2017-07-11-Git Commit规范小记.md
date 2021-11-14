@@ -1,4 +1,16 @@
-# standard
+---
+layout:     post
+title:      Git Commit规范小记
+subtitle:   Git Commit规范小记
+date:       2017/07/11
+author:     HongWeiChen
+header-img: img/blog-banner-dark.jpg
+catalog: true
+tags:
+    - Git
+---
+
+# Git Commit规范小记
 
 - feat: 新功能（feature）
 - fix: 修补bug

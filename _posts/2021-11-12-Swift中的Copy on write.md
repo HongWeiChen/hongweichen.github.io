@@ -1,4 +1,16 @@
-# Copy on write
+---
+layout:     post
+title:      JavaScript中柯里化（函数化编程）
+subtitle:   JavaScript中柯里化（函数化编程）
+date:       2021/11/11
+author:     HongWeiChen
+header-img: img/blog-banner-dark.jpg
+catalog: true
+tags:
+    - Swift
+---
+
+# Swift中的Copy on write
 
 ## 写时复制
 

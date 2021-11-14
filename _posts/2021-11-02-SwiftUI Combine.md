@@ -27,7 +27,6 @@
   - Operators(操作者)
   - Subjects(对象)
 
-
 # Operators
 
 ## receive
