@@ -1,7 +1,16 @@
-# React-Native底层原理
+---
+layout:     post
+title:      React-Native底层原理
+subtitle:   React-Native底层原理
+date:       2021/11/10
+author:     HongWeiChen
+header-img: img/blog-banner-dark.jpg
+catalog: true
+tags:
+    - React-Native
+---
 
-- 参考
-  - https://zhuanlan.zhihu.com/p/41920417
+# React-Native底层原理
 
 ## React-Native框架构成
 
@@ -147,3 +156,7 @@ export default class ChildComponent extends Component {
 ## 无直接关系之间的通信
 
 前面提到的都是有层级关系的组件通信方式，而如果组件之间没有层级的话，可以通过如AsyncStorage或JSON文件等方式进行无直接关系组件间的通信。当然，还可以使用EventEmitter/EventTarget/EventDispatch继承或实现接口的方式、Signals模式或Publish/Subscribe的广播形式，都可以达到无直接关系组件间的通信。这些组件间的通信方式使得组件之间的数据可以传递起来。
+
+# 参考
+
+- [知乎](https://zhuanlan.zhihu.com/p/41920417)
