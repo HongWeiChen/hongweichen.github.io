@@ -140,7 +140,6 @@ DynamicProperty是一个Protocol，也就是State内部，实现了update的方�
 通过网上一些文章可以了解到，State是通过struct值变化通知SwiftUI，使当前视图失效并且重新计算。
 
 - Why @state only works with structs
-
   - [知乎](https://zhuanlan.zhihu.com/p/111033422)
   - [hackingwithswift](https://www.hackingwithswift.com/books/ios-swiftui/why-state-only-works-with-structs)
 
