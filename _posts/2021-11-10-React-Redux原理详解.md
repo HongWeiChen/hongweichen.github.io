@@ -1,7 +1,17 @@
-# Redux原理
-因为之前在公司开发React-Native项目中，为了解决数据同步相应的问题，使用了Redux框架，今天就来写一写Redux原理，加深一下自己对Redux的理解。
+---
+layout:     post
+title:      JavaScript中柯里化（函数化编程）
+subtitle:   JavaScript中柯里化（函数化编程）
+date:       2021/11/11
+author:     HongWeiChen
+header-img: img/blog-banner-dark.jpg
+catalog: true
+tags:
+    - React-Native
+---
 
-参考来自：https://www.jianshu.com/p/e984206553c2
+# 前言
+因为之前在公司开发React-Native项目中，为了解决数据同步相应的问题，使用了Redux框架，今天就来写一写Redux原理，加深一下自己对Redux的理解。
 
 # Redux设计理念
 Redux是将整个应用状态存储到一个地方上称之为store，里面保存着一个状态树store tree，组件可以派发(dispatch)行为(action)给store，而不是直接通知其他组件，组件内部通过订阅store中的状态state来刷新自己的视图
@@ -12,25 +22,25 @@ Redux是将整个应用状态存储到一个地方上称之为store，里面保�
 - 保持只读状态
 - 数据改变只能通过纯函数执行
 
-## 唯一数据源
+### 唯一数据源
 整个应用的state都被存储到一个状态树里面，并且这个状态树，只存在于唯一的store中。
 
-## 保持只读性
+### 保持只读性
 state是只读的，唯一可以改变state的方式只能通过action，action是一个用于描述以发生时间的普通对象。
 
-## 数据改变只能通过纯函数执行
+### 数据改变只能通过纯函数执行
 使用纯函数来执行修改，为了描述action是如何改变state的，只需要编写reducer
 
 # Redux概念解析
 
-## Store
+### Store
 - store就是保存数据的地方，整个应用只能有一个store
 - redux提供createStore来生成store
 ```JavaScript
 import {createStore} from 'redux'
 const store=createStore(fn);
 ```
-## State
+### State
 state就是store里面的数据，store里可以有多个state，Redux规定一个state对应一个View，只要View相同，state就相同，反过来也一样，可以通过store.getState()来获取state
 ```JavaScript
 import {createStore} from 'redux'
@@ -38,7 +48,7 @@ const store=createStore(fn);
 const state=store.getState()
 ```
 
-## Action
+### Action
 state的改变会导致View的变化，但是在redux中不能直接操作state，也就是说不能使用this.setState来操作，用户只能操作到View。Redux提供了一个对象来告诉Store需要改变state。Action是一个对象其中type属性是必须的，表示Action名称，其他可以根据需求自由设置。
 ```JavaScript
 const action={
@@ -47,7 +57,7 @@ const action={
 }
 ```
 
-## store.dispatch()
+### store.dispatch()
 
 store.dispatch是唯一View发出Action的方法
 ```JavaScript
@@ -74,6 +84,6 @@ const reducer =(state,action)=>{
 }
 ```
 
-这部分内容来自于参考文章。
+# 参考
 
-在文章下方有对源码的解析，但是个人对redux源码一翻查看后，发现这份解析是偏老了，有兴趣的可以去看下。有空的话我也会去对redux新的源码进行解析，未完待续。
+- [简书](https://www.jianshu.com/p/e984206553c2)
