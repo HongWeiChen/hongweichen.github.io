@@ -1,3 +1,15 @@
+---
+layout:     post
+title:      SwiftUI State
+subtitle:   SwiftUI State
+date:       2021/11/05
+author:     HongWeiChen
+header-img: img/blog-banner-dark.jpg
+catalog: true
+tags:
+    - SwiftUI
+---
+
 # State
 
 [Apple Developer]([State](https://developer.apple.com/cn/documentation/swiftui/managing-user-interface-state/))

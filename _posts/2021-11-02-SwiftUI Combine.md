@@ -1,3 +1,15 @@
+---
+layout:     post
+title:      SwiftUI Comebine
+subtitle:   SwiftUI Comebine
+date:       2021/11/05
+author:     HongWeiChen
+header-img: img/blog-banner-dark.jpg
+catalog: true
+tags:
+    - SwiftUI
+---
+
 # Comebine
 
 - [概念](#概念)
