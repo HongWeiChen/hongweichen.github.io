@@ -35,7 +35,9 @@ array.append("wangwu")
 在Swift中，array是["zhangsan", "lisi", "wangwu"]，而array2还是["zhangsan", "lisi"]，这就是结构体和类的最大区别。
 
 
-那么，是不是每次将struct赋值给到其他变量或者传递函数时都会发生复制呢。答案是否定的，在Swift中Array、Dictionary、String这些类型中，尽管他们都是值类型，但在Swift的具体实现中做了优化，可避免不必要的复制。在《The Swift Programming Language(Swift2.2)》一书中的“Classes and Structures”一章末尾写到：`The description above refers to the “copying” of strings, arrays, and dictionaries. The behavior you see in your code will always be as if a copy took place. However, Swift only performs an actual copy behind the scenes when it is absolutely necessary to do so. Swift manages all value copying to ensure optimal performance, and you should not avoid assignment to try to preempt this optimization.`
+那么，是不是每次将struct赋值给到其他变量或者传递函数时都会发生复制呢。答案是否定的，在Swift中Array、Dictionary、String这些类型中，尽管他们都是值类型，但在Swift的具体实现中做了优化，可避免不必要的复制。在《The Swift Programming Language(Swift2.2)》一书中的“Classes and Structures”一章末尾写到：
+
+> The description above refers to the “copying” of strings, arrays, and dictionaries. The behavior you see in your code will always be as if a copy took place. However, Swift only performs an actual copy behind the scenes when it is absolutely necessary to do so. Swift manages all value copying to ensure optimal performance, and you should not avoid assignment to try to preempt this optimization.
 
 在Swift中采用的优化方式叫写时复制，简单的说就是，只有当一个结构体发生了写入的动作时才会有复制的行为。具体的做法就是，在结构体内部用一个引用类型来存储实际的数据，在不进行写入操作的普通传递中，都是将内部的reference引用计数+1，在进行写入操作时，对内部的reference做一次copy操作用来存储新的数据，防止和之前的reference产生意外的数据共享。
 
