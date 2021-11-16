@@ -134,7 +134,7 @@ tags:
 文章中已经对代码增加了注释，这里在做一下总结：
 1. 发出将要加载bridge事件的通知
 2. 使用NSThread创建一个优先级最高的线程，提供给JS使用。
-3. [registerExtraModules可以直接看下注释来理解，这个不是很重要，因为大部分情况下没有用到](###registerExtraModules)
+3. registerExtraModules可以直接看下注释来理解，这个不是很重要，因为大部分情况下没有用到
 4. _initializeModules初始化JS调用的Native模块
 5. registerExtraLazyModules(Debug下调用，先忽略)
 6. ensureOnJavaScriptThread确认是否在JavaScript线程执行，如果不是就调到JavaScirpt的线程执行
