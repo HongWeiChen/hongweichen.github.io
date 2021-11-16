@@ -64,6 +64,8 @@ void RCTRegisterModule(Class moduleClass)
 
 RCTRegisterModule则是将模块的Class进行存储到一个数组中。
 
+**补充一点：load是系统方法，是在pre-main的时候运行的，在对RCTBridge进行初始化时，就已经将所有Module类名进行存储**
+
 
 # RCT_EXPORT_METHOD
 
