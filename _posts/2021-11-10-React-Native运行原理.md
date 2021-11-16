@@ -20,4 +20,5 @@ tags:
 
 >所以整个 RN 的执行流程就是：
 >>初始化：View/Bridge -> 加载/执行 JSBundle -> Bridge(JSI) -> Native
+
 >>运行时：(e.g) 触摸屏幕 -> Native EventListen -> Bridge(JSI) -> JS xxxx -> Bridge(JSI) ……
