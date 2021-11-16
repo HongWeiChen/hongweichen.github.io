@@ -14,7 +14,7 @@ tags:
 
 前阵子在翻看Redux源码的时候，突然看到createStore中有个代码是
 
-```JavaScript
+```js
 function createStore(preloadState, state, enhancer) {
   ...忽略一大段代码
   enhancer(createStore)(preloadState, state)
@@ -36,7 +36,7 @@ function createStore(preloadState, state, enhancer) {
 
 示例：
 
-```JavaScript
+```js
 function sum(x, y) {
   return x + y
 }
@@ -68,7 +68,7 @@ console.log(ret)
 
 这种写法也经常出现在面试题中，起码我就见过。
 
-```JavaScript
+```js
 function sum() {
   return function(x) {
     return x + 4
@@ -86,7 +86,7 @@ sumFunc(3) // 7
 
 提前确认使用的方法
 
-```JavaScript
+```js
 function calculate(isAdd) {
   if (isAdd == true) {
     return function(x, y) {

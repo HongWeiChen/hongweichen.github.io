@@ -141,7 +141,7 @@ tags:
 7. 加载js
 8. 所有都加载完毕后执行js
 
-*ensureOnJavaScriptThread与loadSource都会有一个dispatch_group_level的动作，当这两个都执行完dispatch_group_level之后就会执行dispatch_group_notify中的dispatch_block_t里面的函数*
+**ensureOnJavaScriptThread与loadSource都会有一个dispatch_group_level的动作，当这两个都执行完dispatch_group_level之后就会执行dispatch_group_notify中的dispatch_block_t里面的函数**
 
 ### registerExtraModules
 

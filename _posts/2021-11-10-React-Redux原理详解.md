@@ -47,7 +47,7 @@ state是只读的，唯一可以改变state的方式只能通过action，action�
 - store就是保存数据的地方，整个应用只能有一个store
 - redux提供createStore来生成store
 
-```JavaScript
+```js
 import {createStore} from 'redux'
 const store=createStore(fn);
 
@@ -56,7 +56,7 @@ const store=createStore(fn);
 
 state就是store里面的数据，store里可以有多个state，Redux规定一个state对应一个View，只要View相同，state就相同，反过来也一样，可以通过store.getState()来获取state
 
-```JavaScript
+```js
 import {createStore} from 'redux'
 const store=createStore(fn);
 const state=store.getState()
@@ -66,7 +66,7 @@ const state=store.getState()
 
 state的改变会导致View的变化，但是在redux中不能直接操作state，也就是说不能使用this.setState来操作，用户只能操作到View。Redux提供了一个对象来告诉Store需要改变state。Action是一个对象其中type属性是必须的，表示Action名称，其他可以根据需求自由设置。
 
-```JavaScript
+```js
 const action={
   type:'ADD_TODO',
   payload:'redux原理'
@@ -77,7 +77,7 @@ const action={
 
 store.dispatch是唯一View发出Action的方法
 
-```JavaScript
+```js
 store.dispatch({
   type:'ADD_TODO',
   payload:'redux原理'
@@ -92,7 +92,7 @@ Store收到Action后，必须给出新的state，这样View才会变化。这种
 
 reducer是一个纯函数，也就是说函数的返回结果必须由参数state和action决定，而且不能产生任何副作用也不能修改state和aciton对象。
 
-```JavaScript
+```js
 const reducer =(state,action)=>{
   switch(action.type){
     case ADD_TODO:
