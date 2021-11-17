@@ -17,6 +17,7 @@ tags:
 # 参考
 
 - [Native和RN通信](https://idmrchan.com/2019/10/14/react-native-principle-02/)
+- [The New React Native Architecture Explained: Part Two](https://formidable.com/blog/2019/jsi-jsc-part-2/)
 
 # RCT_EXPORT_MODULE/RCT_EXPORT_METHOD
 
