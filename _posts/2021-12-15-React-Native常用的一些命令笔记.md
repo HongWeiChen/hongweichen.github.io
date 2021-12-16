@@ -49,7 +49,7 @@ jarsigner -verbose -keystore release.keystore -signedjar release.apk app-release
 
 npm view <packagename> versions --json
 
-## 映射
+## Ensure that the packageer server is running....
 
 adb reverse tcp:8081 tcp:8081
 
