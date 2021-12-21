@@ -31,9 +31,9 @@ react-native eject 若不存在iOS/android文件使用这个命令创建native c
 
 #### 编译index.js
 
-iOS：react-native bundle --entry-file='index.js' --bundle-output='./android/app/src/main/assets/index.android.bundle' --dev=false --platform='android'
+Android：react-native bundle --entry-file='index.js' --bundle-output='./android/app/src/main/assets/index.android.bundle' --dev=false --platform='android'
 
-Android：react-native bundle --entry-file index.js --bundle-output ./bundle/ios/main.jsbundle --platform ios --assets-dest ./bundle/ios --dev false
+iOS：react-native bundle --entry-file index.js --bundle-output ./bundle/ios/main.jsbundle --platform ios --assets-dest ./bundle/ios --dev false
 
 编译IPA
 在Xcode中编译IPA包
