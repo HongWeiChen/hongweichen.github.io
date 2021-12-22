@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      MRC下的一些测试
-subtitle:   retain和strong的剖析
+title:      MRC下retain所影响retainCount的变化
+subtitle:   剖析retain、strong、retainCount
 date:       2021/11/15
 author:     HongWeiChen
 header-img: img/blog-banner-dark.jpg
