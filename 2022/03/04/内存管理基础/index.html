@@ -4,24 +4,24 @@
 <script src="/config.200719895cc512ed4305.js"></script>
 <!-- hexo injector head_begin end -->
 <meta charset="utf-8">
-<title>Objective-C之方法的本质 - Milo Blog</title>
+<title>内存管理基础 - Milo Blog</title>
 <base href="/">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<link rel="canonical" href="http://hongweichen.github.io/2021/12/22/Objective-C%E4%B9%8B%E6%96%B9%E6%B3%95%E7%9A%84%E6%9C%AC%E8%B4%A8/">
+<link rel="canonical" href="http://hongweichen.github.io/2022/03/04/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-<meta name="description" content="方法的本质 方法的本质是消息，底层使用objc_msgSend，objc_msgSend有两个参数，方法接受者和方法的主体。当我们调用一个方法时，objc_msgSend会先从cacht_t缓存列表中查找到对应的bucket，然后从bucket中取到sel和imp，sel是方法编号，imp是函数指针地址，从缓存中获取对应的bucket是汇编层面的快速查找。若快速查找找不到对应的方法，则开始执行慢速">
+<meta name="description" content="程序可执行文件的结构 一个程序的可执行文件在内存中的结果，从大的角度可以分为两个部分：只读部分和可读写部分。只读部分包括程序代码（.text）和程序中的常量（.rodata）。可读写部分（也就是常量）大致可以分成下面几个部分：  .data：初始化了的全局变量和静态变量 .bss：即Block Started by Symbol，未初始化的全局变量和静态变量 heap：堆，使用malloc，rea">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Objective-C之方法的本质">
-<meta property="og:url" content="http://hongweichen.github.io/2021/12/22/Objective-C%E4%B9%8B%E6%96%B9%E6%B3%95%E7%9A%84%E6%9C%AC%E8%B4%A8/index.html">
+<meta property="og:title" content="内存管理基础">
+<meta property="og:url" content="http://hongweichen.github.io/2022/03/04/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="Milo Blog">
-<meta property="og:description" content="方法的本质 方法的本质是消息，底层使用objc_msgSend，objc_msgSend有两个参数，方法接受者和方法的主体。当我们调用一个方法时，objc_msgSend会先从cacht_t缓存列表中查找到对应的bucket，然后从bucket中取到sel和imp，sel是方法编号，imp是函数指针地址，从缓存中获取对应的bucket是汇编层面的快速查找。若快速查找找不到对应的方法，则开始执行慢速">
+<meta property="og:description" content="程序可执行文件的结构 一个程序的可执行文件在内存中的结果，从大的角度可以分为两个部分：只读部分和可读写部分。只读部分包括程序代码（.text）和程序中的常量（.rodata）。可读写部分（也就是常量）大致可以分成下面几个部分：  .data：初始化了的全局变量和静态变量 .bss：即Block Started by Symbol，未初始化的全局变量和静态变量 heap：堆，使用malloc，rea">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://img0.baidu.com/it/u=1056811702,4111096278&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500">
-<meta property="article:published_time" content="2021-12-21T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-02-21T11:46:12.261Z">
+<meta property="article:published_time" content="2022-03-03T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-03-04T08:18:23.738Z">
 <meta property="article:author" content="Milo">
-<meta property="article:tag" content="Objective-C">
+<meta property="article:tag" content="内存管理">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img0.baidu.com/it/u=1056811702,4111096278&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500">
 
